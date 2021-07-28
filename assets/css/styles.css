@@ -489,6 +489,18 @@ section.our-work > p {
   margin-bottom: 0;
 }
 
+@media (max-width: 600px) {
+  .reviews .title-leaves {
+    max-height: 8vw !important;
+  }
+
+  .reviews .title {
+    min-width: unset !important;
+    max-width: 100px !important;
+    font-size: 1.4rem !important;
+  }
+}
+
 @media (max-width: 1000px) {
   .reviews .quote {
     font-size: 20px;
