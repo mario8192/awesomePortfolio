@@ -470,10 +470,38 @@ section.our-work > p {
   color: #333;
 }
 
+.reviews .quote-container {
+  display: flex;
+  flex-direction: row;
+  left: 0;
+  right: 0;
+  margin: 25px auto;
+  position: relative;
+  width: 80%;
+}
+
+.reviews .quote-text {
+  display: flex;
+  flex-direction: column;
+  width: 40rem;
+  right: 0;
+  left: 0;
+}
+
+.reviews .author-pic {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: 0px 30px;
+  background-size: cover;
+  background-position-x: center;
+}
+
 .reviews .quote {
   text-align: center;
-  width: 85%;
-  font-size: 22px;
+  width: max-content;
+  max-width: 80%;
+  font-size: 20px;
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 15px;
@@ -481,8 +509,9 @@ section.our-work > p {
 }
 
 .reviews .author {
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 55px;
+  width: max-content;
 }
 
 .reviews .author:last-child {
