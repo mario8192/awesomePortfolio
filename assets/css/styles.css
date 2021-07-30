@@ -477,7 +477,7 @@ section.our-work > p {
   right: 0;
   margin: 25px auto;
   position: relative;
-  width: 80%;
+  width: 85%;
 }
 
 .reviews .quote-text {
@@ -495,6 +495,12 @@ section.our-work > p {
   margin: 0px 30px;
   background-size: cover;
   background-position-x: center;
+}
+
+.reviews .flex-right {
+  justify-content: flex-end;
+  text-align: right !important;
+  align-self: flex-end;
 }
 
 .reviews .quote {
@@ -527,16 +533,50 @@ section.our-work > p {
     min-width: unset !important;
     max-width: 100px !important;
     font-size: 1.4rem !important;
+    margin-bottom: 75px;
   }
 }
 
 @media (max-width: 1000px) {
   .reviews .quote {
+    margin-top: 20px;
     font-size: 20px;
+    justify-content: center;
+    align-self: center;
+    text-align: center !important;
+  }
+
+  .reviews .quote-text {
+    width: 30rem;
   }
 
   .reviews .author {
     font-size: 16px;
+    justify-content: center;
+    align-self: center;
+    text-align: center !important;
+  }
+
+  .reviews .flex-right {
+    justify-content: center;
+    align-self: center;
+    text-align: center !important;
+  }
+
+  .reviews .quote-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .reviews .flex-right.author-pic {
+    position: absolute;
+  }
+
+  .reviews .flex-right.quote-text {
+    position: relative;
+    transform: translateX(-165px);
   }
 }
 
