@@ -19,7 +19,7 @@ body {
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   overflow-y: auto;
-  overflow-x: hidden;
+  overflow-x: hidden !important;
 }
 
 ul,
@@ -195,7 +195,8 @@ header nav li:last-child {
 .hero .hero-content-container {
   display: flex;
   flex-direction: row;
-  width: 36rem;
+  max-width: 36rem;
+  width: 100%;
   padding: 0 0 2em 0;
   justify-content: space-between;
 }
@@ -314,7 +315,7 @@ header nav li:last-child {
   position: relative;
   z-index: 1;
   height: auto;
-  overflow: hidden;
+  overflow: hidden !important;
   perspective: inherit;
   transform-style: inherit;
 }
@@ -466,7 +467,7 @@ section.our-work > p {
 
 .reviews .title-leaves {
   max-height: 45px;
-  padding: 2px 25px;
+  padding: 2px 15px;
   color: #333;
 }
 
