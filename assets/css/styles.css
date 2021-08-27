@@ -548,7 +548,8 @@ section.our-work > p {
   }
 
   .reviews .quote-text {
-    width: 30rem;
+    max-width: 30rem;
+    width: 100%;
   }
 
   .reviews .author {
